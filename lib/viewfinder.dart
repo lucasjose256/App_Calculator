@@ -21,15 +21,26 @@ class _ViewState extends State<View> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      width: double.infinity,
-      child: const Card(
-        color: Colors.grey,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(2.0))),
-        child: Text("num"),
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Container(
+          height: 200,
+          width: double.infinity,
+          child: const Card(
+            color: Colors.grey,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(40.0))),
+            child: Align(
+              child: Text(
+                "lllllllllll",
+                style: TextStyle(fontSize: 45),
+              ),
+              alignment: Alignment(0.9, 0.5),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
